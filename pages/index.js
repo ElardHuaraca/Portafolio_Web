@@ -27,6 +27,7 @@ export default function Home() {
     return (
       <a href={redes.url}
         target="_blank"
+        rel={redes.rel}
         className={redes.style}>
         <Image
           src={redes.img}
@@ -63,6 +64,7 @@ export default function Home() {
           {redes({
             url: 'https://www.facebook.com/elard.huaracaquispe/',
             img: facebook,
+            rel: 'Facbook',
             alt: 'Facebook',
             width: 35,
             height: 35,
@@ -71,6 +73,7 @@ export default function Home() {
           {redes({
             url: 'https://www.linkedin.com/in/elard-huaraca-quispe-a9a8b818b/',
             img: linkedin,
+            rel: 'Linkedin',
             alt: 'Linkedin',
             width: 35,
             height: 35,
@@ -78,6 +81,7 @@ export default function Home() {
           })}
           {redes({
             url: '',
+            rel: '',
             img: cv,
             alt: 'CV',
             width: 35,
