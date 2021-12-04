@@ -1,0 +1,77 @@
+.container_about_me {
+    display    : flex;
+    align-items: center;
+}
+
+.perfilImgContainer {
+    width          : 40%;
+    margin         : 40px 0 20px 0;
+    display        : flex;
+    justify-content: space-evenly;
+}
+
+.perfilImg {
+    border-radius: 50%;
+    object-fit   : cover;
+}
+
+.perfil_description {
+    width    : 60%;
+    font-size: 24px;
+}
+
+.description {
+    margin: 40px;
+}
+
+.title_center {
+    text-align: center;
+    font-size : larger;
+}
+
+.content_skills {
+    display: inline-block;
+}
+
+.content_skills li {
+    display: inline-block;
+    margin : 0 2rem 2rem 0;
+}
+
+.facebook {
+    margin-left: 2.2rem;
+}
+
+.after_facebook {
+    margin-left: 1.5rem;
+}
+
+.container_estudios {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-evenly;
+}
+
+.title {
+    margin-bottom: 3rem;
+    margin-top: 0rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    .container_about_me {
+        flex-direction: column;
+    }
+
+    .perfil {
+        display        : flex;
+        justify-content: space-evenly;
+        width          : 100%;
+    }
+
+    .perfil_description {
+        width: 100%;
+    }
+
+
+}
