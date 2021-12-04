@@ -58,7 +58,7 @@ export default function Home() {
         <div className={styles.perfil_description}>
           <p className={styles.description}>
             Soy Elard Huaraca Quispe pre profesional en
-            <b> Diseño y Desarrollo de Software</b> en <a href="https://www.tecsup.edu.pe/" target="_blank"><u>TECSUP</u></a>.
+            <b> Diseño y Desarrollo de Software</b> en <a href="https://www.tecsup.edu.pe/" target="_blank" rel="TECSUP"><u>TECSUP</u></a>.
             Me especializo en el desarrollo <b>Backend</b>.
           </p>
           {redes({
