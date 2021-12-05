@@ -118,7 +118,9 @@ export default function Home() {
         </div>
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', marginTop: '6rem', paddingBottom: '6rem' }}>
-        <iframe src="https://drive.google.com/file/d/1CWK03r1aM0t0rWO_pkUh7L1SxQwVUtZq/preview" width="640" height="480" allow="autoplay"></iframe>
+        <iframe src="https://drive.google.com/file/d/1CWK03r1aM0t0rWO_pkUh7L1SxQwVUtZq/preview"
+          width="850" height="480" allow="autoplay"
+          style={{ border: 'none' }}></iframe>
       </div>
     </>
   )
