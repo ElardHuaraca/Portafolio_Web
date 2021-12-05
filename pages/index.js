@@ -64,59 +64,61 @@ export default function Home() {
           {redes({
             url: 'https://www.facebook.com/elard.huaracaquispe/',
             img: facebook,
-            rel: 'Facbook',
             alt: 'Facebook',
-            width: 35,
-            height: 35,
+            width: 40,
+            height: 40,
             style: styles.facebook
           })}
           {redes({
-            url: 'https://www.linkedin.com/in/elard-huaraca-quispe-a9a8b818b/',
+            url: 'https://www.linkedin.com/in/elard-huaraca/',
             img: linkedin,
-            rel: 'Linkedin',
             alt: 'Linkedin',
-            width: 35,
-            height: 35,
+            width: 40,
+            height: 40,
             style: styles.after_facebook
           })}
           {redes({
-            url: '',
-            rel: '',
+            url: '/cv.docx',
             img: cv,
             alt: 'CV',
-            width: 35,
-            height: 35,
+            width: 40,
+            height: 40,
             style: styles.after_facebook
           })}
         </div>
       </div>
-      <div>
-        <h3 className={styles.title_center}>Conocimientos</h3>
-        <div className={styles.content_skills}>
-          {skillsList(Skills)}
+      <div className={styles.container_estudios}>
+        <div className={styles.container}>
+          <h3 className={styles.title_center}>Conocimientos</h3>
+          <div className={styles.content_skills}>
+            {skillsList(Skills)}
+          </div>
+        </div>
+        <div className={styles.container}>
+          <h3 className={`${styles.title_center}`}>Estudios</h3>
+          <div className={styles.tecsup}>
+            <div style={{ marginBottom: '2rem' }}>
+              <h4>TECSUP</h4>
+              <p>
+                <b>Diseño y Desarrollo de Software</b>
+                <br />
+                <br />
+                <b>2018 - 2021</b>
+              </p>
+            </div>
+            <div>
+              <Image
+                src={tecsupLogo}
+                alt="Tecsup"
+                width={350}
+                height={125}
+              />
+            </div>
+          </div>
         </div>
       </div>
-      <div>
-        <h3 className={`${styles.title_center} ${styles.title}`}>Estudios</h3>
-        <div className={styles.container_estudios}>
-          <div>
-            <h4>TECSUP</h4>
-            <p>
-              <b>Diseño y Desarrollo de Software</b>
-              <br />
-              <br />
-              <b>2018 - Actualidad</b>
-            </p>
-          </div>
-          <div >
-            <Image
-              src={tecsupLogo}
-              alt="Tecsup"
-              width={350}
-              height={125}
-            />
-          </div>
-        </div>
+      <div style={{ display: 'flex', justifyContent: 'center', marginTop: '6rem', paddingBottom: '6rem' }}>
+        <iframe src="https://drive.google.com/file/d/1CWK03r1aM0t0rWO_pkUh7L1SxQwVUtZq/preview" width="640" height="480" allow="autoplay"></iframe>
       </div>
     </>
   )
