@@ -70,7 +70,7 @@ export default function Home() {
             style: styles.facebook
           })}
           {redes({
-            url: 'https://www.linkedin.com/in/elard-huaraca/',
+            url: 'https://www.linkedin.com/in/elardhuaraca/',
             img: linkedin,
             alt: 'Linkedin',
             width: 40,
